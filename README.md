@@ -1,5 +1,5 @@
 # AnimateOnScroll_and_AnimateOnMouseMove
-Animate the website with scrolling and moving the mouse on a centered cube.
+Animate the website with scrolling and moving the mouse on a centered cube with a canvas background.
 
 
 Src: 
