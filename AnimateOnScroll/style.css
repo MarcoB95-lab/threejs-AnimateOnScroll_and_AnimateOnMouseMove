@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: monospace;
+    color: white;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#c {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: url(skyline.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+main {
+    width: 100vw;
+    height: 200vw;
+    z-index: 99;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    font-size: 5vh;
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 4vh;
+}
+
+#scrollProgress {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99;
+    font-size: 3vh;
+}
+
+#vwSrcLink {
+    position: fixed;
+    z-index: 99;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Sean Bradley" />
+        <title>Three.js Animate on Scroll</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Import maps polyfill -->
+        <!-- Remove this when import maps will be widely supported -->
+        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "/build/three.module.js",
+                    "three/examples/jsm/libs/stats.module": "/jsm/libs/stats.module.js"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="c"></canvas>
+        <span id="scrollProgress"></span>
+        <main>
+            <h1>Animate on Scroll</h1>
+            <section>
+                <h2>Begin scrolling to see things change</h2>
+            </section>
+            <section>
+                <h2>Changing Objects Position</h2>
+                <p>The cubes position is now changing</p>
+            </section>
+
+            <section>
+                <h2>Changing Objects Rotation</h2>
+                <p>The cubes rotation is now changing</p>
+            </section>
+
+            <section>
+                <h2>Changing Camera Position</h2>
+                <p>The camera position is now changing</p>
+            </section>
+
+            <section>
+                <h2>You are at the bottom</h2>
+                <p>The cube will now be auto rotating</p>
+                <p>Now you can scroll back to the top to reverse the animation</p>
+            </section>
+        </main>
+        <script type="module" src="main.js" />
+    </body>
+</html>
